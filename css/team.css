@@ -1,0 +1,46 @@
+body {
+    background-color: #f7f7f7 !important;
+}
+
+.team-page {
+    margin: 100px auto 50px;
+}
+
+.player-number {
+    border-bottom-right-radius: 10px;
+}
+
+.player-info {
+    background-color: #044694;
+    color: #fff !important;
+}
+
+.players {
+    background-color: #F4CB0A;
+    border-radius: 20px;
+    transition: all 0.9s ease;
+}
+
+.players:hover {
+    background-color: #044694;
+}
+
+.players-info {
+    padding-left: 100px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.players-info div {
+    margin: 10px 0;
+}
+
+.players:hover .img-holder div {
+    background-color: #F4CB0A;
+}
+
+.players:hover .player-info {
+    background-color: #F4CB0A;
+}

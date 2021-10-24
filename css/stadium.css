@@ -1,0 +1,30 @@
+body {
+    background-color: #f7f7f7 !important;
+}
+
+.stadium-page {
+    margin: 100px auto 70px;
+}
+
+.stadium-page .list-group .active {
+    background-color: #044694 !important;
+}
+
+.stadium-page .list-group .list-group-item:hover {
+    color: #F4CB0A !important;
+    background-color: #044694;
+}
+
+.extra-theme {
+    margin: 40px 0 15px;
+}
+
+.news-facebook {
+    background: #324C81 !important;
+    color: #fff !important;
+}
+
+.news-twitter {
+    background-color: #1DA1F2 !important;
+    color: #fff !important;
+}

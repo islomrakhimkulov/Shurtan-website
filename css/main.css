@@ -1,0 +1,836 @@
+@import './bootstrap.min.css';
+@import './swiper.min.css';
+@import './all.min.css';
+@import './fonts.css';
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+ :root {
+    --white: #fff;
+    --orangeColor: #F4CB0A;
+    --darkBlue: #044694;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F4CB0A;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #044694;
+    border-radius: 50px;
+}
+
+.active {
+    color: var(--orangeColor) !important;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a.line {
+    text-decoration: underline;
+    color: var(--darkBlue);
+}
+
+a {
+    text-decoration: none;
+}
+
+.colorShrt {
+    color: var(--darkBlue);
+}
+
+.colorOrange {
+    color: var(--orangeColor);
+}
+
+.line {
+    color: var(--orangeColor);
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .55);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0;
+}
+
+.navbar-toggle {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:active,
+.navbar-toggle:focus {
+    background: none !important;
+    border-color: none !important;
+}
+
+.navbar-light {
+    background: #FFF9F9;
+}
+
+
+/*--- for navbar scrool --- */
+
+.cover {
+    position: relative;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.scrollTop i {
+    color: var(--orangeColor);
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+}
+
+.scrollTop.activeScroll {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title img {
+    padding-bottom: 60px;
+    padding-right: 25px;
+    width: 150px;
+}
+
+.main-title span {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 140px;
+    line-height: 100%;
+    padding-top: 400px;
+    padding-bottom: 450px;
+    text-shadow: 12px 15px 15px rgba(0, 0, 0, 0.5);
+    line-height: 0.01em;
+}
+
+.time-size {
+    font-size: 12px;
+}
+
+.time-bg {
+    background-color: var(--darkBlue);
+    padding: 3px;
+}
+
+.info-link {
+    font-size: 12px;
+}
+
+ul {
+    list-style: none
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+ul.social-li li {
+    text-transform: unset;
+    margin: auto;
+}
+
+.navbar-nav .nav-item>.nav-link {
+    color: #000;
+    transition: color 0.2s linear;
+}
+
+.navbar-nav .nav-item>.nav-link:hover {
+    color: var(--orangeColor)!important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: var(--darkBlue);
+    color: #F4CB0A !important;
+}
+
+.input-group-append li {
+    list-style: none;
+}
+
+.navbar ul li i {
+    visibility: hidden;
+    opacity: 0;
+    color: var(--orangeColor);
+    transition: visibility 1s linear, opacity 1s linear;
+}
+
+.navbar ul li:hover i {
+    visibility: visible;
+    opacity: 1;
+    color: var(--orangeColor);
+}
+
+
+/* -------start  section-2 ---------- */
+
+.news {
+    position: relative;
+    background: #F7F7F7;
+}
+
+.second-section {
+    margin-top: -150px;
+}
+
+.game-data .data-tour {
+    margin-top: 6px;
+    margin-bottom: -6px;
+}
+
+.main-result {
+    background-color: var(--white);
+}
+
+.add {
+    background-color: var(--white);
+}
+
+.table-left {
+    padding-left: 7px !important;
+}
+
+.team-font {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.result-table table div.h5 {
+    font-weight: bold;
+}
+
+.uzneftgaz {
+    width: 150px;
+}
+
+.group {
+    position: relative;
+}
+
+.text-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--orangeColor);
+    font-size: 18px;
+    cursor: pointer;
+    text-shadow: 0px 8px 8px rgb(0 0 0 / 25%);
+}
+
+.text-quotes {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    right: 150px;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.info {
+    position: absolute;
+    bottom: -50px;
+    left: 0x;
+}
+
+.score {
+    background-color: #fff;
+}
+
+.second-card {
+    height: 280px;
+    width: 100%;
+}
+
+.winner {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 260px;
+    z-index: 1;
+}
+
+.extra-col {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.group table .slide-text {
+    position: absolute;
+    background-color: #F5F5F5;
+}
+
+
+/*---------- start section-3 ----------*/
+
+.image-slider {
+    position: relative;
+}
+
+.image-slider .swiper-slide img {
+    display: block;
+    max-width: 100%;
+}
+
+.image-slider .slide-link {
+    position: absolute;
+    bottom: 30px;
+    padding-right: 75px;
+    left: 15px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 2px #000;
+    color: #fff;
+}
+
+.image-slider .slide-link:hover {
+    text-decoration: underline;
+}
+
+.image-slider .swiper-link:hover img {
+    transition: all 0.3s ease;
+    filter: blur(2px);
+}
+
+
+/*------ start  section 4----------*/
+
+.about-shurtan {
+    background: #F7F7F7;
+    position: relative;
+}
+
+.container .about {
+    position: absolute;
+    top: -20px;
+}
+
+.about-title {
+    height: 80px;
+}
+
+.about-shurtan .card:hover {
+    border-top: 1px solid var(--darkBlue);
+}
+
+.about-shurtan .container .card {
+    transition: all 0.3s linear;
+    border: 0;
+}
+
+.about-shurtan .container .card a {
+    color: #000;
+}
+
+.about-shurtan .container .card:hover {
+    border-top: 3px solid var(--darkBlue);
+    transform: translateY(-15px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-shurtan .container .card:hover a {
+    color: var(--darkBlue);
+}
+
+.about-shurtan .container a img {
+    display: block;
+    width: 100%;
+}
+
+
+/* ------start section-6  -------- */
+
+.main-menu {
+    position: relative;
+    background: #F7F7F7;
+}
+
+.team-info {
+    position: absolute;
+    top: -20px;
+}
+
+.table-content .social-icons-group ul li a {
+    color: #4F4F4F;
+}
+
+.table-content .container ul li a i {
+    border-radius: 50%;
+}
+
+.table-content .container ul li:nth-child(1) i {
+    color: #3B5998;
+}
+
+.table-content .container ul li:nth-child(2) i {
+    color: #1C9CEA;
+}
+
+.table-content .container ul li:nth-child(3) i {
+    color: #BB0000;
+}
+
+.table-content .container ul li:nth-child(4) i {
+    color: #2EA4E1;
+}
+
+tbody,
+tr,
+th,
+td {
+    border: none;
+}
+
+.swiper-slide .card-footer a i {
+    padding: 0 5px;
+}
+
+
+/* ----------- video galery-------- */
+
+.video-galery {
+    position: relative;
+    background: #F7F7F7;
+}
+
+.galery {
+    position: absolute;
+    top: -15px;
+}
+
+.video-title-text {
+    position: absolute;
+    top: -20px;
+}
+
+.only-write {
+    position: relative;
+}
+
+.videos a {
+    display: block;
+}
+
+.video-link {
+    display: block;
+    position: relative;
+    height: 300px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    transition: .7s ease;
+    -webkit-transition: .7s ease;
+    -o-transition: .7s ease;
+    -moz-transition: .7s ease;
+}
+
+.video-link:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+}
+
+.video-link::before {
+    content: url(../image/videogalery/empty2x.png);
+    position: absolute;
+    left: 90px;
+    top: 110px;
+}
+
+.video-link:hover::before {
+    content: url(../image/videogalery/full2x.png);
+}
+
+.video-table .row div {
+    transition: all 0.3s linear;
+}
+
+.video-text {
+    position: absolute;
+    bottom: -12px;
+    left: 5px;
+    right: 80px;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all 25s ease-in;
+    font-weight: lighter;
+}
+
+.video-link:hover .video-text {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.table-content {
+    position: relative;
+}
+
+.table-info {
+    position: absolute;
+    top: -15px;
+}
+
+.teams-table table tr:nth-child(1) {
+    padding: 15px;
+}
+
+.teams-table table tr {
+    margin: 7px 0 !important;
+}
+
+.teams-table table tr td,
+.teams-table table tr th {
+    text-align: center;
+    padding: 8px;
+}
+
+.teams-table table tr th:nth-child(2),
+.teams-table table tr td:nth-child(2) {
+    text-align: left;
+}
+
+.teams-table table tr:nth-child(n) td:first-child {
+    background: hsl(212, 94%, 41%);
+    color: #fff;
+}
+
+.teams-table table tr:nth-child(2) td:nth-child(1) {
+    background: hsl(80, 100%, 45%);
+}
+
+.teams-table table tr:nth-child(3) td:nth-child(1) {
+    background: hsl(80, 100%, 45%);
+}
+
+.teams-table table tr:nth-child(4) td:nth-child(1) {
+    background: hsl(80, 100%, 45%);
+}
+
+.teams-table table tr:nth-last-child(-n+2) td:nth-child(1) {
+    background: hsl(359, 100%, 60%);
+    color: #fff;
+}
+
+
+/* start social media */
+
+.social-media {
+    position: relative;
+    background: #F7F7F7;
+}
+
+.social-title {
+    position: absolute;
+    top: -20px;
+}
+
+.social-media .container .card a {
+    color: #4F4F4F!important;
+}
+
+.social-media .container .card ul li a i {
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+
+.social-media .container .card ul li:nth-child(1) i {
+    color: #3B5998;
+}
+
+.social-media .container .card ul li:nth-child(2) i {
+    color: #2EA4E1;
+}
+
+.social-media .container .card ul li:nth-child(3) i {
+    color: #BB0000;
+}
+
+.social-media .container .card ul li:nth-child(4) i {
+    color: #BB298E;
+}
+
+.swiper-slide .card-footer a i {
+    padding: 0 5px;
+}
+
+.social-name,
+.social-handle {
+    font-weight: 400;
+}
+
+.social-name {
+    margin-bottom: .4rem;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+}
+
+.social-handle {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+.social {
+    background-color: #F7F7F7;
+}
+
+
+/* start footer */
+
+footer {
+    background: var(--darkBlue);
+    color: #fff !important;
+    font-family: 'Roboto' sans-serif !important;
+}
+
+footer h4 {
+    font-size: 18px;
+}
+
+footer ul li {
+    padding: 3px 0;
+}
+
+footer ul li a {
+    color: var(--white) !important;
+}
+
+footer.footer .footer-inner ul li a {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+}
+
+footer.footer .footer-inner ul li a:hover {
+    color: var(--orangeColor) !important;
+}
+
+.footer-inner .row .social-title {
+    padding-bottom: 10px;
+}
+
+.footer-inner .row::before {
+    content: '';
+    height: 3px;
+    width: 96%;
+    background: var(--white);
+}
+
+footer .foreach {
+    padding-left: 20px;
+}
+
+
+/* -------another css files cod */
+
+
+/* ---videos.css------- */
+
+.video-pages {
+    margin: 120px auto;
+}
+
+
+/* -----table.one.css */
+
+.table-one {
+    margin: 100px auto 50px;
+}
+
+
+/* ---------------start media query-------------- */
+
+@media (min-width: 1200px) {
+    .ps-xl-5 {
+        padding-left: -3rem!important;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .sponsor {
+        display: flex;
+    }
+    .video-link::before {
+        left: 80px;
+    }
+}
+
+@media (min-width:769px) and (max-width:991px) {
+    .main-title img {
+        width: 120px;
+        padding-right: 10px;
+    }
+    .main-title span {
+        font-size: 100px;
+    }
+    .video-link::before {
+        left: 75px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        z-index: 1030;
+        right: 0;
+        left: 0;
+        border-radius: 0;
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .second-card {
+        margin-bottom: 20px;
+        min-width: auto !important;
+    }
+    .main-title img {
+        width: 120px;
+        padding-right: 10px;
+    }
+    .main-title span {
+        font-size: 90px;
+    }
+    .main-menu {
+        width: 100%;
+        margin: auto;
+        background-color: #F7F7F7;
+    }
+    .video-galery .videos .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .video-link {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        transition: .7s ease;
+        -webkit-transition: .7s ease;
+        -o-transition: .7s ease;
+        -moz-transition: .7s ease;
+    }
+    .video-link:hover {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+    }
+    .video-link::before {
+        left: 200px;
+    }
+    .social-title {
+        top: -20px;
+    }
+    .footer-inner .row {
+        padding-bottom: 15px !important;
+    }
+    .footer-inner .row::before {
+        margin: auto;
+        width: 90%;
+        margin-left: 30px;
+    }
+    .foreach {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width:576px) {
+    .main-title img {
+        width: 100px;
+        padding-right: 10px;
+    }
+    .main-title span {
+        font-size: 75px;
+    }
+    .video-link::before {
+        left: 180px;
+    }
+    .footer-inner {
+        text-align: center;
+    }
+    .foreach {
+        text-align: center;
+    }
+}
+
+@media (min-width:540px) and (max-width:575px) {
+    .video-link::before {
+        left: 220px;
+    }
+}
+
+@media (min-width:480px) and (max-width:539px) {
+    .video-link::before {
+        left: 200px;
+    }
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .main-title span {
+        font-size: 60px;
+    }
+    .video-link::before {
+        left: 130px;
+    }
+}

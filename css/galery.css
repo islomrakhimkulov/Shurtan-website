@@ -1,0 +1,16 @@
+.galery-pages {
+    margin: 80px auto 50px auto;
+}
+
+.galery-text {
+    height: 50px;
+}
+
+.img-info {
+    background-color: #044694 !important;
+    color: #fff !important;
+}
+
+.img-info a {
+    color: #fff;
+}

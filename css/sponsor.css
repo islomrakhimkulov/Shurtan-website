@@ -1,0 +1,29 @@
+body {
+    background-color: #f7f7f7 !important;
+}
+
+.sponsor-page {
+    margin: 100px auto 50px;
+}
+
+.sponsor-page .list-group .active {
+    background-color: #044694 !important;
+}
+
+.sponsor-page .list-group .list-group-item:hover {
+    color: #F4CB0A !important;
+    background-color: #044694;
+}
+
+.owner-text {
+    height: 50px;
+}
+
+.img-info {
+    background-color: #044694 !important;
+    color: #fff !important;
+}
+
+.img-info a {
+    color: #fff;
+}

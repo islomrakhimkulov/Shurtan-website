@@ -1,0 +1,76 @@
+.news-one {
+    margin: 100px auto 20px;
+}
+
+body {
+    background-color: #f7f7f7 !important;
+}
+
+.extra-theme {
+    margin: 40px 0 15px;
+}
+
+.news-facebook {
+    background: #324C81 !important;
+    color: #fff !important;
+}
+
+.news-twitter {
+    background-color: #1DA1F2 !important;
+    color: #fff !important;
+}
+
+.list-link {
+    color: #044694 !important;
+}
+
+.list-link>span {
+    text-decoration: underline;
+}
+
+.list-link span:hover {
+    color: #F4CB0A !important;
+}
+
+.list-link span {
+    transition: all 0.1s linear;
+}
+
+.extra-news .card {
+    border-top: 3px solid #000;
+    transition: all 0.3s linear;
+}
+
+.extra-news .card a {
+    color: #000 !important;
+}
+
+.extra-news .card:hover {
+    border-top: 3px solid var(--darkBlue);
+}
+
+.extra-news .card:hover a {
+    color: var(--darkBlue) !important;
+}
+
+.extra-news a img {
+    display: block;
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+.extra-news a img:hover {
+    transform: scale(1.1);
+}
+
+.list-link span:hover {
+    text-decoration: underline;
+}
+
+.extra-news {
+    margin-top: 50px;
+}
+
+.text-color {
+    color: #044694;
+}

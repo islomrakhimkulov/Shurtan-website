@@ -1,0 +1,21 @@
+body {
+    background-color: #f7f7f7 !important;
+}
+
+.connect-page {
+    margin: 100px auto 50px;
+}
+
+.connect-btn {
+    background-color: #044694 !important;
+    color: #fff !important;
+}
+
+.connect-page .list-group .active {
+    background-color: #044694 !important;
+}
+
+.connect-page .list-group .list-group-item:hover {
+    color: #F4CB0A !important;
+    background-color: #044694;
+}
