@@ -1,3 +1,3 @@
 # Shurtan-website
 
-You can find this website [fcshurtan.uz](http://fcshurtan.uz/).
+You can find this website from here - [fcshurtan.uz](http://fcshurtan.uz/)
