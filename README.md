@@ -1,3 +1,3 @@
 # Shurtan-website
 
-You can find this website <a href="fcshurtan.uz">
+You can find this website [fcshurtan.uz](http://fcshurtan.uz/).
